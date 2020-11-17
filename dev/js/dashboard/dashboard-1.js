@@ -11,7 +11,12 @@ const dashboardAppearTL = gsap.timeline();
 export function dashboardAppear() {
     dashboardAppearTL
         .from("#dashboard-outline", {
-            duration:0.5,
+            duration: 0.75,
             drawSVG: "0%"
-        }, "dashboard outline")
+        })
+        .from("#dashboard", {
+            duration: 1,
+            alpha:0
+        })
+    return dashboardAppearTL;
 }

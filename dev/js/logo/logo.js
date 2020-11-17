@@ -74,7 +74,10 @@ export function logoScaleAnim() {
                 align: "#logo-scale-path",
                 alignOrigin: [0.5, 0.5]
             }
-        });
+        }, "logo move")
+        .to("#panther-container", {
+            backgroundColor: "#17061E"
+        }, "logo move");
 
         //MotionPathHelper.create("#panther-logo");
 

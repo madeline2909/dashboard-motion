@@ -431,6 +431,3 @@ textarea {
 #panther-container > div #dashboard-container {
   position: absolute;
 }
-#panther-container > div #dashboard-container #dashboard {
-  visibility: hidden;
-}
