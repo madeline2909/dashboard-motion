@@ -431,9 +431,3 @@ textarea {
 #panther-container > div svg #panther {
   visibility: hidden;
 }
-#panther-container > div svg #left-wing {
-  visibility: hidden;
-}
-#panther-container > div svg #right-wing {
-  visibility: hidden;
-}
