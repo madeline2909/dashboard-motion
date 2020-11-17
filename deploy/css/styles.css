@@ -415,3 +415,19 @@ textarea {
 /* =============
     Panther Dashboard Svg
 ============= */
+#panther-container {
+  display: grid;
+  grid-template-columns: auto 60% auto;
+  grid-template-areas: ". panther .";
+  background-color: #000;
+}
+#panther-container > div {
+  grid-area: panther;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#panther-container > div svg {
+  width: 100%;
+}
