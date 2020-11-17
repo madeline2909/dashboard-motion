@@ -3,20 +3,30 @@
 ============= */
 
 #panther-container{
-    display: grid;
-    grid-template-columns: auto 60% auto;
-    grid-template-areas: ". panther .";
+    // display: grid;
+    // grid-template-columns: auto 60% auto;
+    // grid-template-areas: ". panther .";
     background-color: #000;
 
     >div{
-        grid-area: panther;
+        // grid-area: panther;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100vw;
         height: 100vh;
 
         svg{
             width: 100%;
+            #panther{
+                visibility: hidden;
+            }
+            #left-wing{
+                visibility: hidden;
+            }
+            #right-wing{
+                visibility: hidden;
+            }
         }
     }
 }
