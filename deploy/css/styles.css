@@ -428,6 +428,3 @@ textarea {
 #panther-container > div svg {
   width: 100%;
 }
-#panther-container > div svg #panther {
-  visibility: hidden;
-}
