@@ -16,17 +16,15 @@
         width: 100vw;
         height: 100vh;
 
-        svg{
+        #panther-logo{
             width: 100%;
-            #panther-holder{
-                //visibility: hidden;
-            }
-            #left-wing{
-                //visibility: hidden;
-            }
-            #right-wing{
-                //visibility: hidden;
+        }
+        #dashboard-container{
+            position: absolute;
+            #dashboard{
+                visibility: hidden;
             }
         }
-    }
+        }
+        
 }

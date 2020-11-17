@@ -425,6 +425,12 @@ textarea {
   width: 100vw;
   height: 100vh;
 }
-#panther-container > div svg {
+#panther-container > div #panther-logo {
   width: 100%;
+}
+#panther-container > div #dashboard-container {
+  position: absolute;
+}
+#panther-container > div #dashboard-container #dashboard {
+  visibility: hidden;
 }

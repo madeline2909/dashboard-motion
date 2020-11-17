@@ -46,6 +46,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/content/dashboard/dashboard-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/dashboard/dashboard-1.html",
+		"oF": 0
+		},
 	"/dev/content/logo/logo.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -85,6 +93,17 @@
 		"oA": 0,
 		"oAP": "/deploy/index.html",
 		"oF": 2
+		},
+	"/dev/js/dashboard/dashboard-1.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/dashboard/dashboard-1-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
 		},
 	"/dev/js/logo/logo.js": {
 		"bF": 0,
