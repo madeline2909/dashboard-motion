@@ -10,7 +10,7 @@ import {dashboardAppear} from "./dashboard/dashboard-1.js";
 const mainTL = gsap.timeline()
 mainTL
 .add(logoAnimation())
-.add(logoScaleAnim(), "logo move")
+.add(logoScaleAnim(), "+=.25", "logo move")
 .add(dashboardAppear(), "logo move");
 
 //instantiate GSDevTools with default settings
