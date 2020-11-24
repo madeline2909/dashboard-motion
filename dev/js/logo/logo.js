@@ -76,7 +76,7 @@ export function logoScaleAnim() {
             }
         }, "logo move")
         .to("#panther-container", {
-            backgroundColor: "#17061E"
+            backgroundColor: "#2D0A44"
         }, "logo move");
 
         //MotionPathHelper.create("#panther-logo");
