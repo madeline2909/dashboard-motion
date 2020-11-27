@@ -37,14 +37,7 @@ export function dashboardAppear() {
             alpha: 0,
             stagger: -0.01
         },"-=.25", "2nd info")
-        .from(".gsap-drop", {
-            y:"-10px",
-            alpha:0,
-            stagger: -0.02
-        },"-=.25", "3rd info")
-        .from(".gsap-fade-2", {
-            alpha: 0,
-            stagger: 0.02
-        },"-=.5", "3rd info")
     return dashboardAppearTL;
 }
+
+
