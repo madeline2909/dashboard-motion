@@ -436,8 +436,8 @@ textarea {
   cursor: pointer;
 }
 #mode-container:hover #mode-btn, #mode-container:active #mode-btn {
-  fill: #00DBC1;
+  fill: #ce2063;
 }
 #mode-container:hover #mode, #mode-container:active #mode {
-  fill: #fff;
+  fill: white;
 }

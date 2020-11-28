@@ -49,7 +49,6 @@ export function valueTrue() {
             fill: "#fff"
         })
         .to("#rpm-value-0", {
-            ease:"easeOut",
             duration: 0.25,
             morphSVG: "#rpm-value-0",
             fill: "#fff"

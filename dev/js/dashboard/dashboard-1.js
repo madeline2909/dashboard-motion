@@ -1,10 +1,8 @@
 import {gsap} from "gsap";
 
 import {DrawSVGPlugin} from "gsap/DrawSVGPlugin";
-import {MotionPathPlugin} from "gsap/MotionPathPlugin";
-import {MotionPathHelper} from "gsap/MotionPathHelper";
 
-gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, MotionPathHelper);
+gsap.registerPlugin(DrawSVGPlugin);
 
 const dashboardAppearTL = gsap.timeline();
 
@@ -31,12 +29,15 @@ export function dashboardAppear() {
         .from(".nav-outlines", {
             duration: 0.75,
             drawSVG: "0%"
-        },"-=.25", "2nd info")
+        },"-=.5", "2nd info")
+        .to("#gearshift-outline", {
+            fill: "#ce2063"
+        },"-=.5", "2nd info")
         .from(".gsap-fade", {
             duration: 0.75,
             alpha: 0,
             stagger: -0.01
-        },"-=.25", "2nd info")
+        },"-=.5", "2nd info")
     return dashboardAppearTL;
 }
 
@@ -50,6 +51,21 @@ export function musicPlay() {
         })
         
     return musicPlayTL;
+}
+
+const locationTL = gsap.timeline();
+
+export function location() {
+    locationTL
+        .to("#current-location", {
+            repeat: 20,
+            fill:"#ce2063"
+        }, "location light changes")
+        .to("#pointer", {
+            repeat: -1,
+            fill:"#00DBC1"
+        }, "location light changes")
+    return locationTL;
 }
 
 
