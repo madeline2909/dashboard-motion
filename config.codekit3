@@ -94,6 +94,17 @@
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
+	"/dev/js/dashboard/btn-click.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/dashboard/btn-click-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/dashboard/car-moving.js": {
 		"bF": 0,
 		"ft": 64,
@@ -279,6 +290,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/sections/_dashboard-1.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_dashboard-1.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/sections/_panther-svg.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -348,6 +372,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/gsap/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/jquery/dist/jquery.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/jquery/dist/jquery-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1130,7 +1165,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {

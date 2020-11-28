@@ -12,13 +12,13 @@ export function valueStart() {
             duration: 0.25,
             morphSVG: "#rpm-value-full",
             fill: "#fff"
-        })
+        }, "start full")
         .to("#rpm-value-0", {
             ease:"none",
             duration: 0.25,
             morphSVG: "#rpm-value-full",
             fill: "#fff"
-        }, "start full")
+        })
         .from(".gsap-drop", {
             y:"-10px",
             alpha:0,
@@ -26,7 +26,7 @@ export function valueStart() {
         }, "start full")
         .to("#temp-value-0", {
             ease:"none",
-            duration: 0.5,
+            duration: 0.25,
             morphSVG: "#temp-value-full",
             fill: "#fff"
         }, "start full")

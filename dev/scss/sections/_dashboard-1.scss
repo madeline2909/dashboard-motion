@@ -1,0 +1,15 @@
+#mode-container{
+    cursor: pointer;
+    // transition: 0.25s;
+    &:hover,
+    &:active {
+        #mode-btn{
+            fill: #00DBC1;
+        }
+        #mode{
+            fill: #fff;
+        }
+    }
+    
+    
+}

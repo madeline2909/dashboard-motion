@@ -3,13 +3,9 @@
 ============= */
 
 #panther-container{
-    // display: grid;
-    // grid-template-columns: auto 60% auto;
-    // grid-template-areas: ". panther .";
     background-color: #000;
 
     >div{
-        // grid-area: panther;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -22,10 +18,7 @@
         #dashboard-container{
             //visibility: hidden;
             position: absolute;
-            #dashboard{
-                //visibility: hidden;
-            }
         }
-        }
+    }
         
 }

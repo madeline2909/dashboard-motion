@@ -40,4 +40,16 @@ export function dashboardAppear() {
     return dashboardAppearTL;
 }
 
+const musicPlayTL = gsap.timeline();
+
+export function musicPlay() {
+    musicPlayTL
+        .fromTo("#song-run", {x:-55},{
+            duration: 50,
+            x:140
+        })
+        
+    return musicPlayTL;
+}
+
 
