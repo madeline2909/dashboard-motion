@@ -1,9 +1,9 @@
 import $ from "jquery";
-// import {catBtnTL} from "./btn-animation.js";
+import {modeChange} from "./mode-change.js";
 
 export function btnClick(){
     $("#mode-container").on("click", function () {
         console.log("click");
-        // catBtnTL.play();
+        modeChange();
     });
 }

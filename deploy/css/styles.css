@@ -428,16 +428,22 @@ textarea {
 #panther-container > div #panther-logo {
   width: 100%;
 }
-#panther-container > div #dashboard-container {
-  position: absolute;
-}
 
-#mode-container {
+#dashboard-container {
+  position: absolute;
+  z-index: 1;
+}
+#dashboard-container #mode-container {
   cursor: pointer;
 }
-#mode-container:hover #mode-btn, #mode-container:active #mode-btn {
+#dashboard-container #mode-container:hover #mode-btn, #dashboard-container #mode-container:active #mode-btn {
   fill: #ce2063;
 }
-#mode-container:hover #mode, #mode-container:active #mode {
+#dashboard-container #mode-container:hover #mode, #dashboard-container #mode-container:active #mode {
   fill: white;
+}
+
+#dashboard-2-container {
+  position: absolute;
+  z-index: 0;
 }

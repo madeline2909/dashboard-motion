@@ -1,15 +1,24 @@
-#mode-container{
-    cursor: pointer;
-    // transition: 0.25s;
-    &:hover,
-    &:active {
-        #mode-btn{
-            fill: $crimson;
-        }
-        #mode{
-            fill: white;
+#dashboard-container{
+    //visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    #mode-container{
+        cursor: pointer;
+        // transition: 0.25s;
+        &:hover,
+        &:active {
+            #mode-btn{
+                fill: $crimson;
+            }
+            #mode{
+                fill: white;
+            }
         }
     }
-    
-    
+}
+
+#dashboard-2-container{
+    position: absolute;
+    z-index: 0;
+    // visibility: hidden;
 }
