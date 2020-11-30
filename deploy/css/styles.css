@@ -433,17 +433,17 @@ textarea {
   position: absolute;
   z-index: 1;
 }
-#dashboard-container #mode-container {
+
+.btn-container {
   cursor: pointer;
 }
-#dashboard-container #mode-container:hover #mode-btn, #dashboard-container #mode-container:active #mode-btn {
+.btn-container:hover #mode-btn, .btn-container:active #mode-btn {
   fill: #ce2063;
 }
-#dashboard-container #mode-container:hover #mode, #dashboard-container #mode-container:active #mode {
+.btn-container:hover #mode, .btn-container:active #mode {
   fill: white;
 }
 
 #dashboard-2-container {
   position: absolute;
-  z-index: 0;
 }
