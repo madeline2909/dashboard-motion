@@ -1,7 +1,7 @@
 #dashboard-container{
     //visibility: hidden;
     position: absolute;
-    z-index: 1;
+    //z-index: 1;
 }
 
 .btn-container{
@@ -19,7 +19,8 @@
 }
 
 #dashboard-2-container{
+    
     position: absolute;
-    //z-index: 2;
+    z-index: -1;
     // visibility: hidden;
 }

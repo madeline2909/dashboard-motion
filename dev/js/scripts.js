@@ -34,5 +34,5 @@ mainTL
 .add(btnClick());
 
 //instantiate GSDevTools with default settings
-//GSDevTools.create();
+GSDevTools.create();
 

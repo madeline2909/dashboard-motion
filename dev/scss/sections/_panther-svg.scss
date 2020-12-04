@@ -4,6 +4,8 @@
 
 #panther-container{
     background-color: #000;
+    position: absolute;
+    z-index: -2;
 
     >div{
         display: flex;

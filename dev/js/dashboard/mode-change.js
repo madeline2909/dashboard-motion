@@ -15,6 +15,7 @@ export function modeChange() {
     .add(rpmAndMile(), "mode change")
     .add(speedAndIcon(), "mode change")
     .add(road(), "mode change")
+    .add(fuelAndTemp(),"-=.25")
     return modeChangeTL;
 }
 
@@ -58,7 +59,7 @@ function rpmAndMile() {
         
 
     // MotionPathHelper.create("#total-miles");
-    //return rpmAndMileTL;
+    return rpmAndMileTL;
     
 }
 
@@ -120,6 +121,25 @@ function speedAndIcon() {
         }, "speed")
 
     // MotionPathHelper.create("#warning-icons");
-    //return speedAndIconTL;
+    return speedAndIconTL;
+}
+
+const fuelTempTL = gsap.timeline();
+
+function fuelAndTemp() {
+    fuelTempTL
+        .to("#temp", {
+            duration: 0.75,
+            x:-8,
+            y:-90
+        }, "vertical move")
+        .to("#fuel", {
+            duration: 0.75,
+            x:40,
+            y:-260
+        }, "vertical move")
+
+    // MotionPathHelper.create("#warning-icons");
+    return fuelTempTL;
 }
 
