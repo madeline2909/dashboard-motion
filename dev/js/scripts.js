@@ -16,11 +16,15 @@ import {valueTrue} from "./dashboard/morph-value.js";
 import {carMove} from "./dashboard/car-moving.js";
 import {carSpeedUp} from "./dashboard/car-moving.js";
 
+import {speedCounter} from "./dashboard/count-up.js";
+
 import {btnClick} from "./dashboard/btn-click.js";
 // import {modeChange} from "./dashboard/mode-change.js";
 
 musicPlay();
 location();
+
+//console.log(speedCounter);
 
 const mainTL = gsap.timeline()
 mainTL
@@ -31,6 +35,7 @@ mainTL
 .add(valueTrue())
 .add(carMove(), "+=1")
 .add(carSpeedUp())
+.add(speedCounter())
 .add(btnClick());
 
 //instantiate GSDevTools with default settings

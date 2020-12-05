@@ -90,7 +90,7 @@ function speedAndIcon() {
             duration: 0.5,
             fill:"#fff"
         })
-        .to("#speed-value", {
+        .to("#speedTag", {
             fill: "#2D0A44",
             duration: 1,
             scale: 0.7,
