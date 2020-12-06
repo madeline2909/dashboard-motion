@@ -6,13 +6,13 @@
 
 .btn-container{
     cursor: pointer;
-    // transition: 0.25s;
+    transition: 0.25s;
     &:hover,
     &:active {
-        #mode-btn{
+        .mode-btn{
             fill: $crimson;
         }
-        #mode{
+        .mode{
             fill: white;
         }
     }
@@ -23,4 +23,8 @@
     position: absolute;
     z-index: -1;
     // visibility: hidden;
+    // #music-container{
+    //     stroke: white;
+    //     border-radius: 9
+    // }
 }

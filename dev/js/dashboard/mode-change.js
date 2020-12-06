@@ -8,7 +8,7 @@ import {MotionPathHelper} from "gsap/MotionPathHelper";
 gsap.registerPlugin(MotionPathPlugin, MorphSVGPlugin, DrawSVGPlugin, MotionPathHelper);
 
 // main tl for the mode-change animations
-const modeChangeTL = gsap.timeline();
+export const modeChangeTL = gsap.timeline();
 
 export function modeChange() {
     modeChangeTL
@@ -16,6 +16,9 @@ export function modeChange() {
     .add(speedAndIcon(), "mode change")
     .add(road(), "mode change")
     .add(fuelAndTemp(),"-=.25")
+    .add(btnMove(), "mode change")
+    .add(musicChange(), "mode change")
+
     return modeChangeTL;
 }
 
@@ -55,10 +58,17 @@ function rpmAndMile() {
             duration: 1,
             drawSVG: "0%"
         },"-=.5", "rpm and mile")
+        .to("#rpm-text", {
+            duration:0.5,
+            motionPath:
+            {
+                path:"#rpm-text-motion-path",
+                align: "#rpm-text-motion-path",
+                alignOrigin: [0.5, 0.5]
+            }
+        }, "rpm and mile")
         
-        
-
-    // MotionPathHelper.create("#total-miles");
+        //MotionPathHelper.create("#rpm-text");
     return rpmAndMileTL;
     
 }
@@ -112,6 +122,7 @@ function speedAndIcon() {
             }
         }, "speed")
         .to("#warning-icons", {
+            duration: 1,
             motionPath:
             {
                 path:"#icons-motion-path",
@@ -141,5 +152,48 @@ function fuelAndTemp() {
 
     // MotionPathHelper.create("#warning-icons");
     return fuelTempTL;
+}
+
+const musicChangeTL = gsap.timeline();
+
+gsap.set("#music-container",{transformOrigin: "right center"})
+gsap.set("#music-small-container",{drawSVG:"0%"})
+
+function musicChange() {
+    musicChangeTL
+        .to(".music-change-fade", {
+            duration: 0.5,
+            alpha:0
+        }, "music change")
+        // .to("#music-container", {
+        //     duration: 0.5,
+        //     scaleX:.38
+        // })
+        .fromTo("#music-container", 
+        {drawSVG:"100% 0%"}, {drawSVG:"25% 25%", duration: 0.75}, "music change")
+        .fromTo("#music-small-container", 
+        {drawSVG:"100% 100%"}, {drawSVG:"100%", duration: 0.75}, "-=.5")
+
+    // MotionPathHelper.create("#warning-icons");
+    return musicChangeTL;
+}
+
+const btnTL = gsap.timeline();
+
+gsap.set("#mode-2D-container",{alpha:0})
+
+function btnMove() {
+    btnTL
+        .to("#mode-3D-container", {
+            duration: 0.5,
+            alpha:0
+        }, "btn change")
+        .to("#mode-2D-container", {
+            duration: 0.5,
+            alpha:1
+        }, "btn change")
+
+    // MotionPathHelper.create("#warning-icons");
+    return btnTL;
 }
 
