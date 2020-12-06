@@ -27,12 +27,6 @@ const rpmAndMileTL = gsap.timeline();
 
 function rpmAndMile() {
     rpmAndMileTL
-        // .to("#rpm-outline", {
-        //     duration: 1,
-        //     morphSVG: 
-        //     {shape: "#rpm-circle-outline",
-        //     type:"rotational"}
-        // })
         .from("#total-miles", {
             duration: 0.75,
             motionPath:
@@ -131,7 +125,7 @@ function speedAndIcon() {
             }
         }, "speed")
 
-    // MotionPathHelper.create("#warning-icons");
+    //MotionPathHelper.create("#warning-icons");
     return speedAndIconTL;
 }
 
@@ -150,7 +144,6 @@ function fuelAndTemp() {
             y:-260
         }, "vertical move")
 
-    // MotionPathHelper.create("#warning-icons");
     return fuelTempTL;
 }
 
@@ -165,16 +158,11 @@ function musicChange() {
             duration: 0.5,
             alpha:0
         }, "music change")
-        // .to("#music-container", {
-        //     duration: 0.5,
-        //     scaleX:.38
-        // })
         .fromTo("#music-container", 
         {drawSVG:"100% 0%"}, {drawSVG:"25% 25%", duration: 0.75}, "music change")
         .fromTo("#music-small-container", 
-        {drawSVG:"100% 100%"}, {drawSVG:"100%", duration: 0.75}, "-=.5")
+        {drawSVG:"100% 100%"}, {drawSVG:"100%", duration: 0.5}, "-=.25")
 
-    // MotionPathHelper.create("#warning-icons");
     return musicChangeTL;
 }
 
@@ -193,7 +181,6 @@ function btnMove() {
             alpha:1
         }, "btn change")
 
-    // MotionPathHelper.create("#warning-icons");
     return btnTL;
 }
 

@@ -10,7 +10,7 @@ export function valueStart() {
         .to("#rpm-value-0", {
             ease:"none",
             duration: 0.25,
-            morphSVG: "#rpm-value-full",
+            morphSVG: "#rpm-value-mid",
             fill: "#fff"
         }, "start full")
         .to("#rpm-value-0", {

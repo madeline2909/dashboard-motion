@@ -3,6 +3,9 @@ import {gsap} from "gsap";
 import {DrawSVGPlugin} from "gsap/DrawSVGPlugin";
 import {MotionPathPlugin} from "gsap/MotionPathPlugin";
 import {MorphSVGPlugin} from "gsap/MorphSVGPlugin";
+
+import {speedCounter} from "./count-up.js";
+
 gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin, MotionPathPlugin);
 
 const carMoveTL = gsap.timeline();
@@ -46,7 +49,14 @@ export function carSpeedUp() {
                 autoRotate: -90,
                 alignOrigin: [0.5, 0.5]
             }
-        }) 
+        }, "speed up") 
+        .add(speedCounter(), "speed up")
+        .to("#rpm-value-0", {
+            duration:30,
+            ease:"none",
+            morphSVG: "#rpm-value-mid",
+            fill: "#fff"
+        }, "speed up")
         
     return carSpeedUpTL;
 }
