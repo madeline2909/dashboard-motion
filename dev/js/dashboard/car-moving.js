@@ -50,6 +50,10 @@ export function carSpeedUp() {
                 alignOrigin: [0.5, 0.5]
             }
         }, "speed up") 
+        .fromTo("#rpm-circle-data-2",{stroke:"#fff", drawSVG:"100% 100%"}, {
+            duration: 50,
+            drawSVG: "100%"
+        }, "speed up")
         .to("#rpm-value-0", {
             duration:30,
             ease:"none",

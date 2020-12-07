@@ -1,7 +1,10 @@
 import {gsap} from "gsap";
 
 import {MorphSVGPlugin} from "gsap/MorphSVGPlugin";
-gsap.registerPlugin(MorphSVGPlugin);
+
+import {MotionPathPlugin} from "gsap/MotionPathPlugin";
+import {MotionPathHelper} from "gsap/MotionPathHelper";
+gsap.registerPlugin(MorphSVGPlugin, MotionPathPlugin, MotionPathHelper);
 
 const valueStartTL = gsap.timeline();
 
@@ -34,7 +37,17 @@ export function valueStart() {
             alpha: 0,
             stagger: -0.05
         }, "start full")
-        
+        .fromTo("#speedTag",{alpha: 0}, {
+            duration: 0.5,
+            alpha:1,
+            motionPath:
+            {
+                path:"#speed-first-motion-path",
+                align: "#speed-first-motion-path",
+                alignOrigin: [0.5, 0.5]
+            }
+        }, "start full")
+        //MotionPathHelper.create("#speedTag");
     return valueStartTL;
 }
 

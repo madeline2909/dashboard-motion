@@ -12,12 +12,12 @@ export const modeChangeTL = gsap.timeline();
 
 export function modeChange() {
     modeChangeTL
+    .add(btnMove(), "mode change")
+    .add(musicChange(), "mode change")
+    .add(fuelAndTemp(),"-=.5", "mode change")
     .add(rpmAndMile(), "mode change")
     .add(speedAndIcon(), "mode change")
     .add(road(), "mode change")
-    .add(fuelAndTemp(),"-=.25")
-    .add(btnMove(), "mode change")
-    .add(musicChange(), "mode change")
 
     return modeChangeTL;
 }
@@ -27,31 +27,10 @@ const rpmAndMileTL = gsap.timeline();
 
 function rpmAndMile() {
     rpmAndMileTL
-        .from("#total-miles", {
-            duration: 0.75,
-            motionPath:
-            {
-                path:"#mile-motion-path",
-                align: "#mile-motion-path",
-                alignOrigin: [0.5, 0.5]
-            }
-        })
-        .to("#rpm-circle-outline", {
-            duration:0.01,
-            stroke:"#fff"
-        })
         .to("#rpm-numbers", {
             duration: 0.5,
             alpha:0
-        },"-=.25")
-        .to("#rpm-outline", {
-            duration: 1,
-            drawSVG: "0%"
-        },"-=.5", "rpm and mile")
-        .from("#rpm-circle-outline", {
-            duration: 1,
-            drawSVG: "0%"
-        },"-=.5", "rpm and mile")
+        })
         .to("#rpm-text", {
             duration:0.5,
             motionPath:
@@ -60,7 +39,34 @@ function rpmAndMile() {
                 align: "#rpm-text-motion-path",
                 alignOrigin: [0.5, 0.5]
             }
+        },"-=.25")
+        .to("#rpm-outline", {
+            duration: 0.5,
+            drawSVG: "0%"
+        },"-=.5", "rpm and mile")
+        .to("#rpm-circle-data-1", {
+            duration: 0.5,
+            alpha:0
+        },"-=.25", "rpm and mile")
+        .fromTo("#rpm-circle-data-2",{alpha:0}, {
+            duration: 0.5,
+            alpha:1
         }, "rpm and mile")
+        .fromTo("#rpm-circle-outline",{
+            stroke:"#fff", drawSVG:"100% 100%"}, {
+            duration: 0.5,
+            drawSVG: "100%"
+        }, "rpm and mile")
+        .from("#total-miles", {
+            duration: 0.5,
+            motionPath:
+            {
+                path:"#mile-motion-path",
+                align: "#mile-motion-path",
+                alignOrigin: [0.5, 0.5]
+            }
+        },"rpm and mile")
+        
         
         //MotionPathHelper.create("#rpm-text");
     return rpmAndMileTL;
@@ -88,6 +94,8 @@ function road() {
 
 const speedAndIconTL = gsap.timeline();
 
+//gsap.set("#speedTag",{transformOrigin: "right bottom"})
+
 function speedAndIcon() {
     speedAndIconTL
         .to("#speed-circle-bg", {
@@ -102,7 +110,7 @@ function speedAndIcon() {
             {
                 path:"#speed-motion-path",
                 align: "#speed-motion-path",
-                alignOrigin: [0.5, 0.5]
+                alignOrigin: [1, 1]
             }
         }, "speed")
         .to("#KMH", {
@@ -125,7 +133,7 @@ function speedAndIcon() {
             }
         }, "speed")
 
-    //MotionPathHelper.create("#KMH");
+    //MotionPathHelper.create("#speedTag");
     return speedAndIconTL;
 }
 

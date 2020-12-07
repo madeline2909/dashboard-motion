@@ -5,7 +5,7 @@ Change the counter speed for how fast your want your number to go up. 1000 is eq
 500 = 1/2 second
 250 = 1/4 second
 */
-var counterSpeed = 600;
+var counterSpeed = 700;
 
 // Set this number you want your counter to count up to. Default is 20
 var topSpeed = 40;

@@ -32,8 +32,8 @@ mainTL
 .add(valueStart(), "-=1")
 .add(valueTrue())
 .add(carMove(), "+=1")
-.add(carSpeedUp())
-.add(btnClick());
+.add(btnClick())
+.add(carSpeedUp());
 
 //instantiate GSDevTools with default settings
 //GSDevTools.create();

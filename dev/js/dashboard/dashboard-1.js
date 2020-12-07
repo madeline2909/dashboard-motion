@@ -4,6 +4,7 @@ import {DrawSVGPlugin} from "gsap/DrawSVGPlugin";
 
 gsap.registerPlugin(DrawSVGPlugin);
 
+//animation when dashboard 1 appears the first time
 const dashboardAppearTL = gsap.timeline();
 
 export function dashboardAppear() {
