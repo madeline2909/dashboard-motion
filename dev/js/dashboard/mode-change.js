@@ -125,7 +125,7 @@ function speedAndIcon() {
             }
         }, "speed")
 
-    //MotionPathHelper.create("#warning-icons");
+    //MotionPathHelper.create("#KMH");
     return speedAndIconTL;
 }
 

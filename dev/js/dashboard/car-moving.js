@@ -50,13 +50,14 @@ export function carSpeedUp() {
                 alignOrigin: [0.5, 0.5]
             }
         }, "speed up") 
-        .add(speedCounter(), "speed up")
         .to("#rpm-value-0", {
             duration:30,
             ease:"none",
             morphSVG: "#rpm-value-mid",
             fill: "#fff"
         }, "speed up")
+        .add(speedCounter())
+
         
     return carSpeedUpTL;
 }
