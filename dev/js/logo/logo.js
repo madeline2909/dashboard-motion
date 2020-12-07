@@ -75,8 +75,12 @@ export function logoScaleAnim() {
                 alignOrigin: [0.5, 0.5]
             }
         }, "logo move")
+        .to("#badge-bg", {
+            duration: 0.5,
+            fill:"#1E4D8B"
+        }, "logo move")
         .to("#panther-container", {
-            backgroundColor: "#2D0A44"
+            backgroundColor: "#1E4D8B"
         }, "logo move");
 
         //MotionPathHelper.create("#panther-logo");

@@ -440,7 +440,7 @@ textarea {
   transition: 0.25s;
 }
 .btn-container:hover .mode-btn, .btn-container:active .mode-btn {
-  fill: #ce2063;
+  fill: #F07405;
 }
 .btn-container:hover .mode, .btn-container:active .mode {
   fill: white;

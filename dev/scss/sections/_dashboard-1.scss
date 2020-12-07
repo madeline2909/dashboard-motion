@@ -2,6 +2,11 @@
     //visibility: hidden;
     position: absolute;
     //z-index: 1;
+    // #album-cover{
+    //     background-image: url(../img/jannabi.jpg);
+    //     background-position: center;
+    //     background-size: contain;
+    // }
 }
 
 .btn-container{
@@ -10,7 +15,7 @@
     &:hover,
     &:active {
         .mode-btn{
-            fill: $crimson;
+            fill: #F07405;
         }
         .mode{
             fill: white;

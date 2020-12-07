@@ -31,7 +31,7 @@ export function dashboardAppear() {
             drawSVG: "0%"
         },"-=.5", "2nd info")
         .to("#gearshift-outline", {
-            fill: "#ce2063"
+            fill: "#F07405"
         },"-=.5", "2nd info")
         .from(".gsap-fade", {
             duration: 0.75,
@@ -59,11 +59,11 @@ export function location() {
     locationTL
         .to("#current-location", {
             repeat: 20,
-            fill:"#ce2063"
+            fill:"#F07405"
         }, "location light changes")
         .to("#pointer", {
             repeat: -1,
-            fill:"#00DBC1"
+            fill:"#D2E679"
         }, "location light changes")
     return locationTL;
 }

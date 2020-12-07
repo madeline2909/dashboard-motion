@@ -95,7 +95,7 @@ function speedAndIcon() {
             fill:"#fff"
         })
         .to("#speedTag", {
-            fill: "#2D0A44",
+            fill: "#D16504",
             duration: 1,
             scale: 0.7,
             motionPath:
@@ -106,7 +106,7 @@ function speedAndIcon() {
             }
         }, "speed")
         .to("#KMH", {
-            fill: "#2D0A44",
+            fill: "#D16504",
             duration: 1,
             motionPath:
             {

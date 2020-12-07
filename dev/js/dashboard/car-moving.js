@@ -21,8 +21,8 @@ export function carMove() {
             x: -40
         }, "gearshift")
         .to("#gearshift-outline", {
-            fill:"#00DBC1",
-            stroke:"#00DBC1"
+            fill:"#D2E679",
+            stroke:"#D2E679"
         }, "gearshift")
         .from("#pointer", {
             alpha:0
