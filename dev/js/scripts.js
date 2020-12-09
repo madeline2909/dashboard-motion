@@ -16,6 +16,8 @@ import {valueTrue} from "./dashboard/morph-value.js";
 import {carMove} from "./dashboard/car-moving.js";
 import {carSpeedUp} from "./dashboard/car-moving.js";
 
+import {roadMorph} from "./dashboard/road-morph.js";
+
 import {btnClick} from "./dashboard/btn-click.js";
 
 musicPlay();
@@ -31,7 +33,9 @@ mainTL
 .add(valueTrue())
 .add(carMove(), "+=1")
 .add(btnClick())
-.add(carSpeedUp());
+.add(carSpeedUp(), "car move")
+.add(roadMorph(), "car move");
+
 
 //instantiate GSDevTools with default settings
 //GSDevTools.create();

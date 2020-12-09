@@ -12,14 +12,13 @@ export const modeChangeTL = gsap.timeline();
 
 export function modeChange() {
     modeChangeTL
-
-    .add(mapMove(), "mode change")
-    .add(btnMove(), "mode change")
-    .add(musicChange(), "mode change")
-    .add(fuelAndTemp(),"-=.5", "mode change")
-    .add(rpmAndMile(), "mode change")
-    .add(speedAndIcon(), "mode change")
-    .add(road(), "mode change")
+    .add(btnMove(), "change 1")
+    .add(mapMove(), "change 2")
+    .add(musicChange(), "change 1")
+    .add(rpmAndMile(), "change 1")
+    .add(fuelAndTemp(), "change 1")
+    .add(speedAndIcon(),"-=1", "change 2")
+    .add(road(),"-=1", "change 2")
 
     return modeChangeTL;
 }
@@ -32,26 +31,26 @@ gsap.set("#rpm-circle-data-2",{alpha:0})
 function rpmAndMile() {
     rpmAndMileTL
         .to("#rpm-numbers", {
-            duration: 0.5,
+            duration: 0.25,
             alpha:0
-        })
+        }, "numbers fade")
         .to("#rpm-text", {
-            duration:0.5,
+            duration:0.25,
             motionPath:
             {
                 path:"#rpm-text-motion-path",
                 align: "#rpm-text-motion-path",
                 alignOrigin: [0.5, 0.5]
             }
-        },"-=.25")
+        }, "numbers fade")
+        .to("#rpm-circle-data-1", {
+            duration: 0.25,
+            alpha:0
+        }, "numbers fade")
         .to("#rpm-outline", {
             duration: 0.5,
             drawSVG: "0%"
         },"-=.5", "rpm and mile")
-        .to("#rpm-circle-data-1", {
-            duration: 0.5,
-            alpha:0
-        },"-=.25", "rpm and mile")
         .fromTo("#rpm-circle-data-2",{alpha:0}, {
             duration: 0.5,
             alpha:1
@@ -81,13 +80,13 @@ const roadTL = gsap.timeline();
 
 function road() {
     roadTL
-        .to("#road", {
+        .to("#road-r", {
             duration: 0.01,
             stroke: "#fff"
         })
         .fromTo(".road", 
         {drawSVG:"20% 0%"}, {drawSVG:"80% 100%", repeat:1, ease:"none",duration:1}, "-=.25")
-        .to("#road", {
+        .to("#road-r", {
             stroke: "none",
             duration:0.5,
             fill:"#fff"
