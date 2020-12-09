@@ -57,7 +57,7 @@ export function carSpeedUp() {
             morphSVG: "#rpm-value-mid",
             fill: "#fff"
         }, "speed up")
-        .add(speedCounter())
+        .add(speedCounter(), "speed up")
         .fromTo("#navigation",{x:40,y:50}, {
             duration: 30,
             x:250,

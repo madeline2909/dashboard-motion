@@ -62,10 +62,6 @@ export function location() {
             repeat: -1,
             fill:"#FFF"
         }, "location light changes")
-        // .to("#pointer", {
-        //     repeat: -1,
-        //     fill:"#D2E679"
-        // }, "location light changes")
     return locationTL;
 }
 

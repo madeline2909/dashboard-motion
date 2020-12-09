@@ -12,6 +12,8 @@ export const modeChangeTL = gsap.timeline();
 
 export function modeChange() {
     modeChangeTL
+
+    .add(mapMove(), "mode change")
     .add(btnMove(), "mode change")
     .add(musicChange(), "mode change")
     .add(fuelAndTemp(),"-=.5", "mode change")
@@ -96,7 +98,7 @@ function road() {
 
 const speedAndIconTL = gsap.timeline();
 
-//gsap.set("#speedTag",{transformOrigin: "right bottom"})
+//gsap.set("#speedTag",{transformOrigin: "left bottom"})
 
 function speedAndIcon() {
     speedAndIconTL
@@ -112,7 +114,7 @@ function speedAndIcon() {
             {
                 path:"#speed-motion-path",
                 align: "#speed-motion-path",
-                alignOrigin: [1, 1]
+                alignOrigin: [0, 1]
             }
         }, "speed")
         .to("#KMH", {
@@ -192,5 +194,23 @@ function btnMove() {
         }, "btn change")
 
     return btnTL;
+}
+
+const mapMoveTL = gsap.timeline();
+
+function mapMove() {
+    mapMoveTL
+        .to("#nav-cp", {
+            duration: 0.5,
+            scaleX:1.75,
+            scaleY:0.7
+        }, "map move")
+        .to("#navigation-container", {
+            duration: 0.5,
+            x:320,
+            y:20
+        }, "map move")
+
+    return mapMoveTL;
 }
 
