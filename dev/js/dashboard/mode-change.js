@@ -25,6 +25,8 @@ export function modeChange() {
 //tl for the rpm animations
 const rpmAndMileTL = gsap.timeline();
 
+gsap.set("#rpm-circle-data-2",{alpha:0})
+
 function rpmAndMile() {
     rpmAndMileTL
         .to("#rpm-numbers", {
