@@ -37,7 +37,7 @@ export function dashboardAppear() {
         .from(".gsap-fade", {
             duration: 0.75,
             alpha: 0,
-            stagger: -0.01
+            stagger: -0.02
         },"-=.5", "2nd info")
     return dashboardAppearTL;
 }
@@ -59,13 +59,13 @@ const locationTL = gsap.timeline();
 export function location() {
     locationTL
         .to("#current-location", {
-            repeat: 20,
-            fill:"#F07405"
-        }, "location light changes")
-        .to("#pointer", {
             repeat: -1,
-            fill:"#D2E679"
+            fill:"#FFF"
         }, "location light changes")
+        // .to("#pointer", {
+        //     repeat: -1,
+        //     fill:"#D2E679"
+        // }, "location light changes")
     return locationTL;
 }
 

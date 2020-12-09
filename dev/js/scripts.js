@@ -17,12 +17,10 @@ import {carMove} from "./dashboard/car-moving.js";
 import {carSpeedUp} from "./dashboard/car-moving.js";
 
 import {btnClick} from "./dashboard/btn-click.js";
-// import {modeChange} from "./dashboard/mode-change.js";
 
 musicPlay();
 location();
 
-//console.log(speedCounter);
 
 const mainTL = gsap.timeline()
 mainTL
@@ -36,5 +34,5 @@ mainTL
 .add(carSpeedUp());
 
 //instantiate GSDevTools with default settings
-//GSDevTools.create();
+GSDevTools.create();
 

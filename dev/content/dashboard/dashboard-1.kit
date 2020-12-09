@@ -10,22 +10,44 @@
     <clipPath id="gearshift-cp">
       <path d="M41.922 1.37l-6.417 31H1.15l6.417-31h34.355z"/>
     </clipPath>
+    <clipPath id="nav-1-cp">
+      <path d="M249.5 274.5h319v435h-319z"/>
+    </clipPath>
     
   </defs>
     <g stroke="none" stroke-width="1.5" fill="none" fill-rule="evenodd">
-      <g id="dashboard">
-        
-        <g id="navigation" transform="translate(230.577 254.655)">
-          <path id="building-6" class="nav-outlines" stroke="#FFF" stroke-linecap="round" d="M126.423 5.345l20.87 188 124.364-79.237L310.423 5.345"/>
-          <circle id="current-location" class="gsap-fade" fill="#FFF" cx="146" cy="285" r="11"/>
-          <path id="building-5" class="nav-outlines" stroke="#FFF" d="M153.423 225.258l126.06-80.913 54.94 103.227L178.7 324.345z"/>
-          <path id="building-1" class="nav-outlines" stroke="#FFF" stroke-linecap="round" d="M80.792 5.345l15.631 138.566-96 12.434"/>
-          <path id="building-2" class="nav-outlines" stroke="#FFF" stroke-linecap="round" d="M6.867 180.713l92.315-11.368 3.241 29.07-96 79.93"/>
-          <path id="building-3" class="nav-outlines" stroke="#FFF" stroke-linecap="round" d="M6.423 331.45l105.272-92.105L180.725 499"/>
-          <path id="building-4" class="nav-outlines" stroke="#FFF" d="M209.556 445.345l-18.133-69.938 65.796-31.062 24.204 80.137-42.635 20.863"/>
-          <path id="nav-solid-path" stroke="#D2E679" stroke-width="3" d="M102.423.345l24 209 39.204 148.332 106.811-51.273 23.985 76.941"/>
-          <path d="M136.154 296.548l9.283-6.461 9.283 6.461a1 1 0 001.505-1.18l-9.855-25.631a1 1 0 00-1.866 0l-9.855 25.632a1 1 0 001.505 1.18z" id="pointer" fill="#FFF" transform="rotate(-12 145.437 282.859)"/>
+      <g id="dashboard" >
+        <g id="navigation-container" clip-path="url(#nav-1-cp)">
+          <g id="navigation" transform="translate(24 23)">
+          
+            <path id="buidling-final" class="nav-outlines" stroke="#F07405" stroke-width="2" d="M120 174.176l86.557 31.266 140.4-31.266V123L120 136.183z"/>
+            <path id="building-1" class="nav-outlines" stroke="#FFF" stroke-linecap="round" d="M304.352 216.451l18.071 148.46L220 372.345v-138z"/>
+            <path id="building-2" class="nav-outlines" stroke="#FFF" stroke-linecap="round" d="M217 409.345l108.182-10 3.241 29.07-104 87.93z"/>
+            <path id="building-3" class="nav-outlines" stroke="#FFF" stroke-linecap="round" d="M285.434 704.345l-53.01-148.896 105.271-92.104L406.725 723z"/>
+            <path id="building-4" class="nav-outlines" stroke="#FFF" d="M435.556 669.345l-18.133-69.938 65.796-31.062 24.204 80.137-42.635 20.863z"/>
+            <path id="building-5" class="nav-outlines" stroke="#FFF" d="M379.423 443.258l126.06-76.913 54.94 105.227L404.7 548.345z"/>
+            <path id="building-6" class="nav-outlines" stroke="#FFF" stroke-linecap="round" d="M347.923 209l25.37 198.345 124.364-76.237 38.097-114.643z"/>
+            <path id="building-7" class="nav-outlines" stroke="#FFF" d="M184.572 316.715L92 308.173l18.865-102.556 75.442 28.829z"/>
+            <path id="building-8" class="nav-outlines" stroke="#FFF" d="M184.572 377.559v-46.154L92 326.453v55.106z"/>
+            <path id="building-9" class="nav-outlines" stroke="#FFF" d="M206.877 568.345l48.728 134.605-108.321-49.364z"/>
+            <path id="building-10" class="nav-outlines" stroke="#FFF" d="M438.18 694.71h28.344l116.86-55.96L618.206 723l-151.682 60.209z"/>
+            <path id="building-11" class="nav-outlines" stroke="#FFF" d="M522.423 343.42l43.64-126.969 95.413 44.364-76.526 196.53z"/>
+            <path id="building-12" class="nav-outlines" stroke="#FFF" d="M95.217 132.532v37.628L69.338 324.453.634 314.715 24.216 93.316z"/>
+            <path id="buidling-13" class="nav-outlines" stroke="#FFF" d="M462.423 187.345l7.5-37.763 82.944 24.763-7.768 20.394z"/>
+            <path id="buidling-14" class="nav-outlines" stroke="#FFF" d="M372 126.558l-.563 51.787 70.402 6.714 9.46-40.826z"/>
+            <path id="building-15" class="nav-outlines" stroke="#FFF" d="M120.966 113.316L107.752.328h117.03l9.663 105.988z"/>
+            <path id="building-16" class="nav-outlines" stroke="#FFF" d="M246.728.328l8.877 104.08 91.318-3-6-83.964z"/>
+            <path id="building-17" class="nav-outlines" stroke="#FFF" d="M194.307 536.207l-7.717-127.862H93.995l34.655 220.23z"/>
+
+            <g id="marker" class="gsap-fade" transform="translate(140.423 174.345)" fill="#FFF" fill-rule="nonzero">
+              <path d="M9.87 29.395C1.545 17.053 0 15.785 0 11.25 0 5.037 4.925 0 11 0s11 5.037 11 11.25c0 4.536-1.545 5.803-9.87 18.145a1.358 1.358 0 01-2.26 0zm.707-13.966c2.57 0 4.654-2.111 4.654-4.715C15.23 8.111 13.147 6 10.577 6s-4.654 2.11-4.654 4.714c0 2.604 2.084 4.715 4.654 4.715z"/>
+            </g>
+            <path id="nav-solid-path" stroke="#D2E679" stroke-width="3" d="M159.423 205.617l44.021 18.568-2 168.16 144.728-13.436 6.251 54.436 39.204 148.332 106.811-51.273 23.985 76.941"/>
+            <path d="M372 520c6.075 0 11-4.925 11-11 0-3.686-1.813-6.948-4.595-8.944A10.95 10.95 0 00372 498c-6.075 0-11 4.925-11 11s4.925 11 11 11z" class="gsap-fade" id="current-location" fill="#F07405"/>
+            <path d="M362.154 520.548l9.283-6.461 9.283 6.461a1 1 0 001.505-1.18l-9.855-25.631a1 1 0 00-1.866 0l-9.855 25.632a1 1 0 001.505 1.18z" id="pointer" transform="rotate(-12 371.437 506.859)"/>
+          </g>
         </g>
+        
         <g id="rpm" transform="translate(448.33 281)">
           <g id="rpm-circle-data-1" clip-path="url(#rpm-cp)">
             <path id="rpm-value-0" fill="none" d="M35.945 506h109.772L78.67 532h-78l18.713-13.793z"/>
@@ -60,9 +82,6 @@
             <path d="M0 0v12l9.882-6z"/>
           </g>
           <path d="M67 50v17h-5V50h5zm11 0v17h-5V50h5z" class="music-change-fade gsap-fade" id="pause-btn" fill="#FFF"/>
-          <!-- <path d="M31 62c17.12 0 31-13.88 31-31 0-8.323-3.28-15.88-8.617-21.448C47.74 3.665 39.798 0 31 0 13.88 0 0 13.88 0 31c0 17.12 13.88 31 31 31z" fill="url(#album-cover-pattern)" class="gsap-fade" id="album-cover"/> -->
-          <!-- <img width="62" clip-path="url(#album-cover-cp)" src="img/jannabi.jpg" class="gsap-fade"> -->
-          <!-- <circle fill="url(#album-cover-pattern)" id="album-cover" class="gsap-fade" cx="225" cy="52" r="31"/> -->
           <circle fill="#fff" id="album-cover" class="gsap-fade" cx="225" cy="52" r="31"/>
           </g>
         </g>
