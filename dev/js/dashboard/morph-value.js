@@ -37,7 +37,7 @@ export function valueStart() {
             alpha: 0,
             stagger: -0.05
         }, "start full")
-        .fromTo("#speedTag",{alpha: 0}, {
+        .fromTo("#speedTag-container",{alpha: 0}, {
             duration: 0.5,
             alpha:1,
             motionPath:

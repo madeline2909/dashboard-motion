@@ -101,11 +101,7 @@ const speedAndIconTL = gsap.timeline();
 
 function speedAndIcon() {
     speedAndIconTL
-        .to("#speed-circle-bg", {
-            duration: 0.5,
-            fill:"#fff"
-        })
-        .to("#speedTag", {
+        .to("#speedTag-container", {
             fill: "#D16504",
             duration: 1,
             scale: 0.7,
@@ -135,6 +131,10 @@ function speedAndIcon() {
                 alignOrigin: [0.5, 0.5]
             }
         }, "speed")
+        .to("#speed-circle-bg", {
+            duration: 0.5,
+            fill:"#fff"
+        })
 
     //MotionPathHelper.create("#speedTag");
     return speedAndIconTL;
