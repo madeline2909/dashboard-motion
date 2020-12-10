@@ -5,6 +5,7 @@
 #panther-container{
     background-color: #000;
     position: absolute;
+    overflow: hidden;
     z-index: -2;
 
     >div{
