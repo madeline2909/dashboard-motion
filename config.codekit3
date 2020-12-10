@@ -189,13 +189,13 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/js/dashboard/dashboard-1.js": {
+	"/dev/js/dashboard/dashboard-appear.js": {
 		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/dev/js/dashboard/dashboard-1-min.js",
+		"oAP": "/dev/js/dashboard/dashboard-appear-min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
@@ -411,7 +411,7 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_dashboard-1.scss": {
+	"/dev/scss/sections/_dashboards.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -419,12 +419,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_dashboard-1.css",
+		"oAP": "/dev/scss/sections/_dashboards.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_panther-svg.scss": {
+	"/dev/scss/sections/_panther-container.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -432,7 +432,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_panther-svg.css",
+		"oAP": "/dev/scss/sections/_panther-container.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

@@ -44,12 +44,20 @@ export function dashboardAppear() {
 
 const musicPlayTL = gsap.timeline();
 
+gsap.set("#album-cover",{transformOrigin:"center"})
+
 export function musicPlay() {
     musicPlayTL
         .fromTo("#song-run", {x:-55},{
-            duration: 50,
+            duration: 40,
             x:140
-        })
+        },"music")
+        .to("#album-cover", {
+            ease:"none",
+            duration:5,
+            repeat:-1,
+            rotation:360
+        },"music")
         
     return musicPlayTL;
 }

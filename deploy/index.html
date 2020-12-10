@@ -16,6 +16,7 @@
 
     <section id="panther-container">
         <div>
+            
             <svg id="dashboard-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               viewBox="0 0 1440 1024">
               <defs>
@@ -50,9 +51,13 @@
                 <clipPath id="nav-cp">
                   <rect x="249.5" y="263.5" width="319" height="446" rx="112" />
                 </clipPath>
-                <!-- <pattern id="album-cover-inside" patternUnits="userSpaceOnUse" x="1125" y="250" height="100%" width="100%">
-                  <image src="img/jannabi.jpg" x="1125" y="250" height="65px" width="65px">
-                </pattern> -->
+                <!-- <clipPath id="album-cp">
+                  <circle cx="225" cy="52" r="31" />
+                </clipPath> -->
+                <pattern viewBox="0 0 65 65" id="album-cover-inside" patternUnits="userSpaceOnUse" x="-1" y="20" height="65px" width="65px">
+                  <image xlink:href="https://images.genius.com/7e109906d252cbc01823f0ad8ffd0cd3.600x600x1.jpg" x="-1" y="0" height="65px" width="65px">
+                  </image>
+                </pattern>
               </defs>
               <g stroke="none" stroke-width="1.5" fill="none" fill-rule="evenodd">
                 <g id="dashboard">
@@ -163,8 +168,9 @@
                       <path d="M0 0v12l9.882-6z" />
                     </g>
                     <path d="M67 50v17h-5V50h5zm11 0v17h-5V50h5z" class="music-change-fade gsap-fade" id="pause-btn" fill="#FFF" />
-                    <!-- <circle fill="url(#album-cover-inside)" id="album-cover" class="gsap-fade" cx="225" cy="52" r="31" /> -->
-                    <circle fill="#fff" id="album-cover" class="gsap-fade" cx="225" cy="52" r="31" />
+                    <!-- <image id="album-cover" clip-path="url(#album-cp) class="gsap-fade" ></image> -->
+                    <circle fill="url(#album-cover-inside)" id="album-cover" class="gsap-fade" cx="225" cy="52" r="31" />
+                    <!-- <circle fill="#fff" id="album-cover" class="gsap-fade" cx="225" cy="52" r="31" /> -->
                   </g>
                 </g>
                 <g id="warning-icons">

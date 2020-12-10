@@ -1,12 +1,11 @@
 #dashboard-container{
     //visibility: hidden;
     position: absolute;
-    image{
-        width: 100%;
-        height: 100%;
-    }
 }
-
+#album-cover{
+    height: 100%;
+    width: 100%;
+}
 .btn-container{
     cursor: pointer;
     transition: 0.25s;
@@ -22,7 +21,6 @@
 }
 
 #dashboard-2-container{
-    
     position: absolute;
     z-index: -1;
 }

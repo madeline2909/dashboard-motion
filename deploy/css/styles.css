@@ -428,15 +428,17 @@ textarea {
   height: 100vh;
 }
 #panther-container > div #panther-logo {
+  position: absolute;
   width: 100%;
 }
 
 #dashboard-container {
   position: absolute;
 }
-#dashboard-container image {
-  width: 100%;
+
+#album-cover {
   height: 100%;
+  width: 100%;
 }
 
 .btn-container {

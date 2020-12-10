@@ -6,9 +6,9 @@ gsap.registerPlugin(GSDevTools);
 import {logoAnimation} from "./logo/logo.js";
 import {logoScaleAnim} from "./logo/logo.js";
 
-import {dashboardAppear} from "./dashboard/dashboard-1.js";
-import {musicPlay} from "./dashboard/dashboard-1.js";
-import {location} from "./dashboard/dashboard-1.js";
+import {dashboardAppear} from "./dashboard/dashboard-appear.js";
+import {musicPlay} from "./dashboard/dashboard-appear.js";
+import {location} from "./dashboard/dashboard-appear.js";
 
 import {valueStart} from "./dashboard/morph-value.js";
 import {valueTrue} from "./dashboard/morph-value.js";
